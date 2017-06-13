@@ -1,0 +1,57 @@
+/** * Created by anatolius on 05/06/2017.  */
+.change-color__wrap,
+.add-label__wrap {
+    display: inline-block;
+    position: relative;
+}
+.color-list,
+.label-list {
+    margin: 0;
+    background-color: #fff;
+    width: 145px;
+    padding: 5px 6px 3px 6px !important;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    top: -80px;
+    left: -60px;
+    transition: .3s linear all;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+}
+
+.label-list {
+    width: auto;
+    padding: 10px 30px 5px 10px !important;
+    text-align: left;
+    top: 0;
+    left: 0;
+}
+.label-list li label {
+    display: block;
+}
+
+.change-color__wrap:hover .color-list,
+.add-label__wrap:hover .label-list
+{
+    opacity: 1;
+    visibility: visible;
+}
+.color-list li {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 3px 3px 1px 3px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #D9E2E6;
+}
+.color-list li:hover {
+    border: 1px solid #7F8C8D;
+}
+.color-lens__icon {
+    cursor: pointer;
+}

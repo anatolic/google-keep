@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">-->
+	<link rel="stylesheet" href="stylesheets/lib/materialize.min.css">
+	<link rel="stylesheet" href="stylesheets/stylesheet.css">
+</head>
+<body>
+<div id="slide-out" class="side-nav fixed">
+	<ul>
+		<li><a href="#!"><i class="material-icons">cloud</i>Google Keep</a></li>
+		<li><a>Vanila js</a></li>
+		<li>
+			<div class="divider"></div>
+		</li>
+	</ul>
+	<ul id="labelsList" class="labels-list">
+	</ul>
+</div>
+
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<ul class="selected-labels-list">
+					<li>All</li>
+					<li>Personal</li>
+				</ul>
+			</div>
+			<form class="col s12">
+				<div class="row">
+					<div class="input-field col s8 offset-s2">
+						<div class="card-panel">
+							<input placeholder="Add note" id="addNote" type="text" class="validate no-margin">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div id="testElm"></div>
+		<div class="row" id="notes"></div>
+	</div>
+</main>
+
+<script
+		src="scripts/lib/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>-->
+<script src="scripts/lib/materialize.min.js"></script>
+<script src="scripts/main.js"></script>
+
+<script type="text/javascript">
+  $(".button-collapse").sideNav();
+</script>
+</body>
+</html>
